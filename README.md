@@ -1,18 +1,5 @@
 # Purpose
 
-Configure an EB CLI repository for a Express application and create an Elastic Beanstalk environment running the Node.js platform.
+Node.js projects launched in Elastic Beanstalk environment.
 
-- [Tutorial](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html)
-
-```
-
-## Learned packages
-
-cookie-parser
-debug
-express
-http-errors
-jade
-morgan
-
-```
+- [Tutorial](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html)
