@@ -53,10 +53,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(methodOverride());
-var cookie_params = cacheNodes ? null : process.env.secret;
+var cookie_params = cacheNodes ? null : process.env.SECRET;
 app.use(cookieParser(cookie_params));
 var session_params = {
-  secret: process.env.secret,
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false,
   store: cacheNodes ? new MemcachedStore({ hosts: cacheNodes }) : null,
