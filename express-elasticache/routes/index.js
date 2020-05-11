@@ -1,6 +1,10 @@
 var express = require("express");
 var router = express.Router();
 
+router.get("/", function (req, res, next) {
+  res.send("You are session: " + req.session.id);
+});
+
 router.get("/slow", function (req, res, next) {
   load(10000);
   res.render("index", { title: "Express", pid: process.pid });
